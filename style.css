@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* resetting fault*/
+  font-size: 22px;
+  font-family: Spartan, monospace; 
+  background-color:#ffe4b5;
+
+}
+
+/* main*/
+h1#title, p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1#title{
+  font-size: 100px;
+  margin-top: 30px;
+  color: #d2691e;
+}
+
+#img-div img{
+  display:block;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto; /* margine 0 auto center items horizontally - it need width specified- display to specify hoe to display an element*/
+  border-radius: 5px;
+}
+
+#image{
+  border: 5px solid #d2691e;
+}
+#img-caption{
+  text-align: center;
+  margin-top: 10px;
+}
+
+#tribute-info ol{
+  list-style: none;
+  text-align: justify;
+  width: 1000px;
+  line-height: 30px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+li{
+  margin: 50px 0;
+}
+
+/* unvisited link*/
+[href]:link{
+  color: violet;
+}
+
+/* visited link*/
+[href]:visited{
+  color: red;
+}
+
+/* mouse over*/
+[href]:hover{
+  color:blue;
+}
+
+/* selected link*/
+[href]:active{
+  color: orange;
+}
+
+.fullname{
+  color:brown;
+  font-weight: bold;
+
+}
+
+.underline{
+  text-decoration: dotted underline;
+}
+
+.civil-right{
+  text-decoration:underline;
+}
+
+#tribute-info{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/* footer*/
+
+footer{
+  height: 100px;
+}
+
+ .symbol{
+  display:flex;
+  justify-content:center;
+ }
+
+  footer{
+    background-color:seashell;
+  }
+
+  button{
+    border: transparent;
+  }
+  .symbol{
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent; 
+    border-right: 40px solid brown; 
+    margin: 0 auto;
+    width: 0px;
+    height: 0px;
+    transform: rotate(90deg);
+    animation-name: zooming;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-delay: 1s;
+  }
+
+  @keyframes zooming{
+    0%{
+      border-right-color: rgba(165,42,42,1);
+    }
+    50%{
+      border-right-color: rgba(165,42,42,0.5);
+    }
+    100%{
+      border-right-color: rgba(165,42,42,0.3);
+
+    }
+  }
+
+  /*screen adjust*/
+  @media screen and (max-width: 992px) {
+  *{
+    font-size: 16px;
+  }
+  #tribute-info ol{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  *{
+    font-size: 14px;
+  }
+
+#tribute-info ol{
+  width: 250px;
+}
+}
+  
+
+   
